@@ -1,28 +1,31 @@
 {
-  "bg": "/imagens/2.jpg",
-  "title": "Darkest Dungeon",
-  "description": "Vença os desafios da Masmorra mais Escura",
+  "bg": "/imagens/1Destiny2.jpg",
+  "title": "Destiny 2",
+  "description": "Venha viajar pelo espaço",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "title": "Fardo de izanagi é uma arma da qual categoria?",
+      "description": "Valendo 10 pontos",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Escopeta",
+        "Fuzil de fusão",
+        "Rifle de precisão",
+        "Lança-granadas"
       ]
     },
     {
       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
+      "title": "Zavala, Ikora e Cayde são de qual classe respectivamente?",
       "description": "Faz tempo em haha",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Titã, Arcana e Caçador",
+         "Arcano, Caçadora e Titã",
+         "Caçador, Titã e Arcano",
+         "Arcano, Titã e Caçador"
+
       ]
     }
   ],
