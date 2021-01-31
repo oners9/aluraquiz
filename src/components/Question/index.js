@@ -22,6 +22,11 @@ const Label = styled.label`
   }
 `;
 
+const Image = styled.img`
+width: 100%;
+height: 80px;
+`;
+
 export default function Question({ question, onSubmit }) {
   const [opcaoSelecionada, setOpcaoSelecionada] = useState();
   const temOpcaoSelecionada = opcaoSelecionada !== undefined;
@@ -53,6 +58,7 @@ export default function Question({ question, onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit}>
+      <Image src={question.image} />
       <h1>{question.title}</h1>
       <p>{question.description}</p>
       {question.alternatives.map((alternative, index) => {
