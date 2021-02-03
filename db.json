@@ -5,26 +5,98 @@
   "questions": [
     {
       "image": "/imagens/destiny1.jpg",
-      "title": "1 - Fardo de Izanagi é uma arma da qual categoria?",
+      "title": "1 - Eu Estou Vivo é uma arma de qual Raid?",
       "description": "",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
-        "A) Escopeta",
-        "B) Fuzil de Fusão",
-        "C) Rifle de Precisão",
-        "D) Lança-granadas"
+        "A) Levitã",
+        "B) Devorador de Mundos",
+        "C) Pináculo estelar",
+        "D) Coroa do desalento"
       ]
     },
     {
       "image": "/imagens/destiny1.jpg",
-      "title": "2 - Zavala, Ikora Rey e Cayde-6 são de qual classe respectivamente?",
+      "title": "2 - Conclusão Irrevogável é uma arma de qual categoria?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "A) Submetralhadora",
+        "B) Escopeta",
+        "C) Fuzil Automático",
+        "D) Fuzil de Fusão"
+      ]
+    },
+    {
+      "image": "/imagens/destiny1.jpg",
+      "title": "3 - Qual o disparo por minuto dos rifles de precisão Elegia-49, Olho Onisciente, Apóstata e Chacal Frígido respectivamente?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "A) 140, 140, 90 e 90",
+        "B) 90, 140, 140 e 90",
+        "C) 90, 90, 140 e 140",
+        "D) 140, 90, 140 e 90"
+      ]
+    },
+    {
+      "image": "/imagens/destiny1.jpg",
+      "title": "4 - Justiça Popular é uma arma de qual atividade?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "A) Assalto",
+        "B) Crisol",
+        "C) Raid",
+        "D) Queda global"
+      ]
+    },
+    {
+      "image": "/imagens/destiny1.jpg",
+      "title": "5 - Qual arma não faz parte da categoria pesada?",
       "description": "",
       "answer": 0,
       "alternatives": [
-         "A) Titã, Arcana e Caçador",
-         "B) Arcano, Caçadora e Titã",
-         "C) Caçador, Titã e Arcano",
-         "D) Arcano, Titã e Caçador"
+        "A) Xenoclasta IV",
+        "B) Vento Terráqueo",
+        "C) Fúria da Corsária",
+        "D) Herege"
+      ]
+    },
+    {
+      "image": "/imagens/destiny1.jpg",
+      "title": "6 - Quantos setores perdidos existem na Zona Morta Europeia?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "A) 12",
+        "B) 14",
+        "C) 16",
+        "D) 17"
+      ]
+    },
+    {
+      "image": "/imagens/destiny1.jpg",
+      "title": "7 - Qual região pertence a Zona Morta Europeia?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "A) Oásis Perdido",
+        "B) A Plataforma",
+        "C) Bosque dos Ecos",
+        "D) Ilhas Submersas"
+      ]
+    },
+    {
+      "image": "/imagens/destiny1.jpg",
+      "title": "8 - Qual setor perdido não é de possuídos?",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+         "A) Cascata dos Sussurros",
+         "B) Caverna das Almas",
+         "C) Sacrário dos Ossos",
+         "D) Bosque Venerado"
 
       ]
     }

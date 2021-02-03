@@ -15,7 +15,7 @@ export default function Result({ resultados }) {
 
   return (
     <div>
-      <Nome>{`Olá ${nome}`}</Nome>
+      <Nome>{`Joelho Mole ${nome}`}</Nome>
       <div>
         {`Você acertou ${quantidade} de ${total} questões.`}
       </div>
