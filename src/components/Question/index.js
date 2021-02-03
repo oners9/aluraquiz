@@ -1,30 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-
-const Label = styled.label`
-  display: block;
-  padding: 4px 0;
-  cursor: pointer;
-  :hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  &[data-selecionado='true'] {
-    background-color: ${({ theme }) => theme.colors.primary};
-
-    &[data-status='SUCESSO'] {
-      background-color: ${({ theme }) => theme.colors.success};
-    }
-
-    &[data-status='ERRO'] {
-      background-color: ${({ theme }) => theme.colors.wrong};
-    }
-  }
-`;
+import Button from '../Button';
+import Alternatives from './Alternatives';
 
 const Image = styled.img`
-width: 100%;
-height: 80px;
+  width: 100%;
+  height: 80px;
 `;
 
 export default function Question({ question, onSubmit }) {
@@ -61,44 +42,19 @@ export default function Question({ question, onSubmit }) {
       <Image src={question.image} />
       <h1>{question.title}</h1>
       <p>{question.description}</p>
-      {question.alternatives.map((alternative, index) => {
-        const alternativeId = `alternative_${index}`;
-        const isCorreto = index === question.answer;
-        const isSelecionado = index === opcaoSelecionada;
-
-        return (
-          <Label
-            key={`${alternativeId}`}
-            htmlFor={alternativeId}
-            data-selecionado={isSelecionado}
-            data-status={
-              respostaConfirmada && `${isCorreto ? 'SUCESSO' : 'ERRO'}`
-            }
-          >
-            <input
-              name="reposta"
-              disabled={respostaConfirmada}
-              type="radio"
-              id={alternativeId}
-              onChange={() => setOpcaoSelecionada(index)}
-            />
-            {' '}
-            {alternative}
-          </Label>
-        );
-      })}
-      <button
+      <Alternatives
+        question={question}
+        opcaoSelecionada={opcaoSelecionada}
+        respostaConfirmada={respostaConfirmada}
+        setOpcaoSelecionada={setOpcaoSelecionada}
+      />
+      <Button
         disabled={!temOpcaoSelecionada || respostaConfirmada}
         type="submit"
+        style={{ width: '100%' }}
       >
-        Confirmar
-      </button>
-      {respostaConfirmada && (
-        <span>
-          {timer}
-          ...
-        </span>
-      )}
+        {respostaConfirmada ? `Aguarde ${timer}...` : 'confirmar'}
+      </Button>
     </form>
   );
 }

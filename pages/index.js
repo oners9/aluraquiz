@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import db from '../db.json';
+import Button from '../src/components/Button';
+import Input from '../src/components/Input';
 import Page from '../src/components/Page';
 import Widget from '../src/components/Widget';
 
@@ -33,17 +35,9 @@ export default function Home() {
         <Widget.Content>
           <p>{db.description}</p>
           <form onSubmit={handleSubmit}>
-            <input onChange={handleChange} />
-            <button type="submit" disabled={nome.length === 0}>Jogar</button>
+            <Input onChange={handleChange} placeholder="Digite o seu nome" />
+            <Button type="submit" disabled={nome.length === 0}>Jogar</Button>
           </form>
-        </Widget.Content>
-      </Widget>
-
-      <Widget>
-        <Widget.Content>
-          <h1>Quizes da Galera</h1>
-
-          <p>lorem ipsum dolor sit amet...</p>
         </Widget.Content>
       </Widget>
     </Page>
