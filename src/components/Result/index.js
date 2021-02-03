@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import styled from 'styled-components';
+import Button from '../Button';
 
 const Nome = styled.div`
 font-size: 26px;
@@ -31,6 +33,9 @@ export default function Result({ resultados }) {
           );
         })}
       </ul>
+      <Link href="/">
+        <Button>Reiniciar</Button>
+      </Link>
     </div>
   );
 }
